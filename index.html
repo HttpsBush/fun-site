@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quiz Mode</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- jsPDF -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+</head>
+
+<body>
+
+<div class="overlay"></div>
+
+<h1>🎮 Quiz Mode</h1>
+
+<div class="box">
+
+  <p>Q1: You are taking too long to decide priorities. Agree?</p>
+  <input id="q1" type="text">
+
+  <p>Q2: Ronaldo is the GOAT</p>
+  <button onclick="saveQ2('Yes')">Yes</button>
+  <button onclick="saveQ2('Absolutely Yes')">Absolutely Yes</button>
+
+  <p>Q3: Is it easy to ignore everything?</p>
+  <input id="q3" type="text">
+
+  <p>Q4: Is it easy to forget memories?</p>
+  <input id="q4" type="text">
+
+  <p>Q5: What do you want?</p>
+  <input id="q5" type="text">
+
+  <br><br>
+
+  <button onclick="generatePDF()">📄 Submit & Download Report</button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

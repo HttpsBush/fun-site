@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quiz Mode</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- jsPDF library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+</head>
+
+<body>
+
+<div class="overlay"></div>
+
+<h2>🎮 Quiz Mode</h2>
+
+<div class="box">
+
+  <p>Q1</p>
+  <input id="q1" type="text">
+
+  <p>Q2: Ronaldo is the GOAT</p>
+  <button onclick="saveQ2('Yes')">Yes</button>
+  <button onclick="saveQ2('Absolutely Yes')">Absolutely Yes</button>
+
+  <p>Q3</p>
+  <input id="q3" type="text">
+
+  <p>Q4</p>
+  <input id="q4" type="text">
+
+  <p>Q5</p>
+  <input id="q5" type="text">
+
+  <br><br>
+
+  <button onclick="generatePDF()">📄 Submit & Download PDF</button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
